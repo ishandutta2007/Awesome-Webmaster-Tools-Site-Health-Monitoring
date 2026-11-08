@@ -1,145 +1,135 @@
-# Awesome-Webmaster-Tools-Site-Health-Monitoring
+# Awesome Webmaster Tools & Site Health Monitoring [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome Webmaster Tools & Site Health Monitoring
-
-> A curated list of top Webmaster Tools and Site Health Monitoring platforms — both SaaS/Hosted commercial solutions and open-source alternatives for technical SEO audits, crawl diagnostics, and uptime tracking.  
-> 🌟 Star this repo if you find it useful! 🌟
+> A curated directory of the best **Webmaster Tools**, **SEO Site Audit Crawlers**, and **Site Health / Uptime Monitoring Solutions** — featuring commercial SaaS platforms and top-starred open-source software for technical SEO audits, Core Web Vitals diagnostics, indexation tracking, and synthetic uptime monitoring.
 
 ---
 
-## 📋 Table of Contents
+## 📑 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Google Search Console](#google-search-console)
-  - [Bing Webmaster Tools](#bing-webmaster-tools)
-  - [Ahrefs Webmaster Tools](#ahrefs-webmaster-tools)
-  - [Semrush Site Audit](#semrush-site-audit)
-  - [Screaming Frog SEO Spider](#screaming-frog-seo-spider)
-  - [Sitebulb](#sitebulb)
-  - [Lumar (Deepcrawl)](#lumar-deepcrawl)
-  - [Moz Pro](#moz-pro)
-  - [Pingdom](#pingdom)
 - [Open-Source Software](#-open-source-software)
-  - [Scrawly](#scrawly)
-  - [SEO Lens](#seo-lens)
-  - [xseo](#xseo)
-  - [Kuvasz](#kuvasz)
-  - [Pingtower](#pingtower)
-  - [sitemap-audit](#sitemap-audit)
-- [Comparison at a Glance](#-comparison-at-a-glance)
+- [Feature Comparison Matrix](#-feature-comparison-matrix)
+- [How to Choose the Right Tool](#-how-to-choose-the-right-tool)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global SEO software and website observability market is estimated at **$85B–$97B in 2025–2026** and projected to grow at a Compound Annual Growth Rate (CAGR) of **13%–14.6%** over the next decade.
+
+The sector displays a **moderately fragmented and bifurcated market structure**: core organic search engine signals remain concentrated under major gatekeepers (Google Search Console and Bing Webmaster Tools), while the commercial SaaS tier is led by heavyweight suites (Semrush, Ahrefs, Moz, SolarWinds/Pingdom) coexisting with agile specialized crawlers (Screaming Frog, Sitebulb, Lumar) and a rapidly surging ecosystem of open-source self-hosted monitoring solutions.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Webmaster Tools and Site Health Monitoring platforms. These are not open-source but are included as reference points for feature comparison.
+Below is the breakdown of premier commercial and hosted Webmaster Tools and Site Health Monitoring platforms, sorted in descending order by company scale (market capitalization / parent valuation / annual revenue).
 
-### Google Search Console
-**Type:** Google's official webmaster tool  
-Google Search Console provides performance reports, index coverage, sitemap management, and URL inspection. The 2026 addition of **AI Overviews and AI Mode performance reports** shows which pages appear in Google's AI-generated answers, with breakdowns by country, device, and date [citation:14]. **Limitation:** The AI report shows impressions only — no clicks, CTR, or query breakdown for AI surfaces [citation:14]. Essential for any site relying on Google organic traffic.
-
-### Bing Webmaster Tools
-**Type:** Microsoft's webmaster suite  
-Bing Webmaster Tools offers URL inspection, sitemap management, crawl issue diagnostics, backlink analysis, and keyword research [citation:9]. Its **AI Performance report** covers citations in Microsoft Copilot, Bing AI summaries, and selected partners, showing cited URLs and **grounding queries** (the phrases the system used to retrieve source material) [citation:14]. Bing's backlink data is often more granular than Google's, listing more backlink sources and anchor text details . Site Scan provides technical SEO audits with parameter handling to ignore tracking tags [citation:9].
-
-### Ahrefs Webmaster Tools
-**Type:** Free SEO audit and backlink tool  
-Ahrefs Webmaster Tools (AWT) offers a free tier for verified site owners, including Site Audit (crawl diagnostics) and Site Explorer (backlink and organic traffic data). A strong starting point for teams wanting Ahrefs' data without a paid subscription.
-
-### Semrush Site Audit
-**Type:** Technical SEO crawler within Semrush suite  
-Semrush Site Audit crawls websites to identify technical SEO issues, with coverage of meta tags, canonicals, hreflang, structured data, and performance via PageSpeed Insights integration [citation:5]. Part of the broader Semrush toolkit for keyword research, competitor analysis, and PPC.
-
-### Screaming Frog SEO Spider
-**Type:** Desktop SEO crawler (industry standard)  
-Screaming Frog is the most widely used desktop crawler for technical SEO audits. It handles JavaScript rendering via a Chrome engine, robots.txt and sitemap parsing, canonical validation, hreflang checks, structured data, and PageSpeed Insights API integration for Core Web Vitals [citation:5][citation:10]. The free version is limited to 500 URLs; the paid license (£199/year) unlocks unlimited crawling [citation:10]. No native log file analysis [citation:10].
-
-### Sitebulb
-**Type:** Visual SEO audit tool with pedagogical explanations  
-Sitebulb provides visual, client-ready audit reports with built-in explanations of why each issue matters and how to fix it [citation:10]. It competes with Screaming Frog on technical depth but differentiates on report presentation and educational guidance. Available as desktop (Lite $18/month) and Cloud options [citation:10].
-
-### Lumar (Deepcrawl)
-**Type:** Enterprise cloud crawler  
-Lumar (formerly Deepcrawl) is a cloud-based enterprise crawler with JavaScript rendering, log file analysis, real-time monitoring, and Core Web Vitals field data (CrUX) support [citation:5]. Positioned for large sites and agencies needing scheduled, team-accessible audits without desktop dependencies.
-
-### Moz Pro
-**Type:** SEO suite with site audit  
-Moz Pro includes Site Audit (crawl diagnostics), keyword research, rank tracking, and backlink analysis. A long-standing SEO platform with a strong community and educational resources.
-
-### Pingdom
-**Type:** Uptime and performance monitoring  
-Pingdom (SolarWinds) monitors site availability, response times, and user experience. While not an SEO crawler, it complements webmaster tools by alerting on downtime and performance degradation that can impact crawl budget and user experience.
+| Platform | Company Scale (Valuation / Revenue) | Starting Paid Tier Pricing | Free Tier / Free Trial Limits | Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Google Search Console](https://search.google.com/search-console)** | **$2.2T+ Market Cap** (Alphabet Inc. parent valuation) | **100% Free** ($0 / month) | **Free Forever**: 1,000 rows in UI tables, 2,000 URL inspection API queries/day, 50,000 URLs per sitemap (up to 50MB) | Official Google search performance, index coverage, Core Web Vitals, sitemap management, and AI Overviews impressions. |
+| **[Bing Webmaster Tools](https://www.bing.com/webmasters)** | **$3.1T+ Market Cap** (Microsoft parent valuation) | **100% Free** ($0 / month) | **Free Forever**: Up to 10,000 URL submissions/day, IndexNow real-time submission, monthly Site Scan audit allowances | Official Bing indexing suite, backlink explorer, AI Copilot citation tracking, and automated Site Scan audits. |
+| **[Pingdom](https://www.pingdom.com/)** | **$3.2B Valuation** (SolarWinds acquired at $3.2B; $796.9M FY revenue) | **$18 / month** (Synthetic Monitoring starting tier) | **14-day free trial** with full synthetic checks & Real User Monitoring (RUM); no permanent free tier | Global synthetic uptime monitoring, multi-step transaction checks, page speed breakdown, and real user monitoring (RUM). |
+| **[Semrush Site Audit](https://www.semrush.com/)** | **$1.9B Valuation** (Acquired by Adobe for $1.9B; $443.6M FY revenue) | **$139.95 / month** (Pro plan billed monthly) | **Free Forever**: 10 queries/day across tools, 1 project, 100 crawled pages/month for Site Audit, 10 position tracking keywords | Full SEO platform crawler checking 140+ technical and on-page issues, Core Web Vitals, AMP, HTTPS, and internal linking. |
+| **[Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools)** | **$150M+ ARR** (Bootstrapped annual recurring revenue) | **$29 / month** (Starter plan; full Lite plan at $129/mo) | **Free Forever (AWT)**: 5,000 crawl credits/month per verified domain for unlimited verified projects (only 200 OK internal HTML URLs consume credits) | Comprehensive technical website audits (170+ SEO issue checks), backlink diagnostics, organic search queries, and broken link checks. |
+| **[Moz Pro](https://moz.com/products/pro)** | **~$67M+ Historical Revenue** (Ziff Davis / iContact subsidiary) | **$49 / month** (Starter plan; Medium plan at $179/mo) | **7-day free trial** of Medium plan (up to 10 campaigns, full keyword/link explorer; requires credit card) + limited permanent free community tools (10 Link Explorer queries/mo) | Site crawl diagnostics, on-page optimization recommendations, domain authority metrics, and rank tracking. |
+| **[Lumar](https://www.lumar.io/)** | **~$8.1M ARR** (Formerly Deepcrawl; venture-backed enterprise platform) | **$25 / month** (GEO Studio entry; full enterprise crawler packages typically start at **$1,200+/month** or $14,000+/year) | **Custom Sales Demo / 14-day assisted proof-of-concept trial** upon request with enterprise crawl allowances; no self-serve free tier | Ultra-large-scale cloud website crawler, JavaScript rendering, log file analysis integration, and Generative Engine Optimization (GEO). |
+| **[Screaming Frog SEO Spider](https://www.screamingfrog.co.uk/seo-spider/)** | **~$5.9M Annual Revenue** (Bootstrapped, UK) | **£199 / year** (~$260/year, single user license) | **Free Forever**: Crawls up to 500 URLs per run (cannot save crawls, excludes JavaScript rendering, custom extraction, scheduling, and API integrations) | The industry standard desktop website audit crawler for on-page SEO, duplicate metadata, redirect chains, and hreflang validation. |
+| **[Sitebulb](https://sitebulb.com/)** | **~$990K Annual Revenue** (Bootstrapped, UK) | **$13.50 / month** (Desktop Lite billed annually; $35/mo for Pro) | **14-day free trial** of Pro plan (up to 500,000 URLs per audit, full feature access, no credit card required) | Pedagogical audit reporting with built-in educational explanations, visual crawl graphs, code hint diagnostics, and cloud crawling options. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Webmaster Tools and Site Health Monitoring tools. All listed projects offer source code you can run on your own infrastructure.
+Self-hosted, transparent, and community-maintained Webmaster Tools, SEO Crawlers, and Site Health Monitoring tools. The projects below are sorted in descending order by GitHub stargazers.
 
-### Scrawly
-**Stack:** Python (desktop app) | **License:** MIT  
-A free, open-source desktop SEO crawler positioned as a direct alternative to Screaming Frog and Sitebulb [citation:7]. Runs **250 checks across 23 areas**, including crawlability, redirects, titles/meta, canonicals, content quality, structured data, internal linking, Core Web Vitals (PageSpeed Insights lab and CrUX field data), hreflang, and security/TLS. Notably includes **AI search readiness (GEO) checks**: which AI crawlers you allow/block, `llms.txt`, and citation readiness [citation:7]. Supports JavaScript rendering, scheduled audits with regression alerts, Google Search Console and GA4 integration, and branded HTML/PDF reports. For WordPress sites, applies safe, reversible fixes. No account, no page limit, MIT licensed [citation:7].
-
-### SEO Lens
-**Stack:** Python / Streamlit | **License:** Open Source (per PyPI)  
-A free, open-source SEO crawler that runs locally with no account, subscription, or tracking [citation:2]. Crawls up to 10,000 URLs per run and provides a health dashboard, Excel report, and site architecture map. Checks cover crawlability/indexing, on-page elements, content quality (including near-duplicate detection via MinHash), internal linking (with PageRank-style Link Score), structured data, hreflang, and performance signals [citation:2]. Uses adaptive speed (AIMD) to avoid overwhelming servers, respects robots.txt including Crawl-delay, and supports pause/resume with SQLite persistence. Honestly labels blocked pages (Cloudflare challenges, CAPTCHAs) rather than silently missing them [citation:2].
-
-### xseo
-**Stack:** Python / PySide6 / SQLite | **License:** Open Source (per PyPI)  
-A local-first SEO crawler with a desktop UI and headless CLI [citation:12]. Crawls sites, extracts on-page signals, detects issues (missing/duplicate titles and descriptions, thin content, broken links, mixed content, missing Open Graph, missing JSON-LD), and groups duplicate content via hashing. Headless CLI outputs JSON, CSV, HTML, and **SARIF** reports, with a `--fail-on` exit code for CI gating [citation:12]. Includes a GitHub Action that uploads findings to the Security → Code scanning tab. All data stays local in `~/.xseo/xseo.sqlite3`. Available as pre-built binaries for macOS, Windows, and Linux, or via `pipx install xseo` [citation:12].
-
-### Kuvasz
-**Stack:** Kotlin / Docker | **License:** Open Source (per Docker Hub)  
-An open-source uptime and SSL monitoring service with status pages [citation:8]. Supports HTTP(S), SSL certificate, heartbeat (push), ICMP ping, TCP port, and DNS monitoring. Features include per-monitor notification channels (Slack, Discord, Telegram, PagerDuty, MS Teams, Google Chat), Prometheus and OpenTelemetry exporters, a full REST API, maintenance windows, and an **MCP server** for AI assistant integration [citation:8]. Compared to UptimeRobot Free: 5-second monitoring intervals, unlimited monitors, 5-second vs 5-minute intervals, and no 50-monitor cap [citation:8].
-
-### Pingtower
-**Stack:** Go / JSON file storage | **License:** Open Source (per Go Packages)  
-A lightweight self-hosted uptime monitor for websites and APIs [citation:3]. Runs as a small Go service with a built-in web dashboard and JSON file-backed persistence. Features include per-check interval configuration, status history, pause/resume, custom headers, Basic/Bearer auth, expected status code, timeout, and webhook alerts on status transitions [citation:3]. Deploys via Go or Docker Compose. Minimal infrastructure requirements make it suitable for quick self-hosted monitoring without a database.
-
-### sitemap-audit
-**Stack:** Node.js / Playwright | **License:** Open Source (per GitHub)  
-A Node.js tool for auditing website health through sitemap analysis [citation:11]. Extracts URLs from XML sitemaps, checks HTTP status codes (detecting 400+ errors), and monitors network requests including blocked resources. Uses Playwright for browser automation with auto-scroll simulation to trigger dynamic content loading. Outputs structured JSON reports for CI/CD integration. Configurable batch sizes and connection limits for polite crawling [citation:11].
+| Project & Repository | GitHub Stars | Primary Tech Stack | Key Capabilities & Architecture |
+| :--- | :---: | :--- | :--- |
+| **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** | [![GitHub stars](https://img.shields.io/github/stars/louislam/uptime-kuma?style=social&color=white)](https://github.com/louislam/uptime-kuma/stargazers) | Node.js / Vue / SQLite | Self-hosted monitoring tool supporting HTTP(s), TCP, Ping, DNS, SSL certificate expiry checks, multi-language support, status pages, and 90+ notification services. |
+| **[Upptime](https://github.com/upptime/upptime)** | [![GitHub stars](https://img.shields.io/github/stars/upptime/upptime?style=social&color=white)](https://github.com/upptime/upptime/stargazers) | GitHub Actions / TypeScript | An automated, serverless uptime monitor and status page powered entirely by GitHub Actions, Git commits, and GitHub Pages. No servers or maintenance required. |
+| **[Gatus](https://github.com/TwiN/gatus)** | [![GitHub stars](https://img.shields.io/github/stars/TwiN/gatus?style=social&color=white)](https://github.com/TwiN/gatus/stargazers) | Go / Web UI | Automated developer-oriented health dashboard with incident alerting, badge generation, HTTP/ICMP/TCP/DNS endpoints, and custom condition evaluations. |
+| **[OpenStatus](https://github.com/openstatusHQ/openstatus)** | [![GitHub stars](https://img.shields.io/github/stars/openstatusHQ/openstatus?style=social&color=white)](https://github.com/openstatusHQ/openstatus/stargazers) | TypeScript / Next.js / Tinybird | Modern open-source synthetic monitoring platform and status page with global latency tracking, incident management, and public status pages. |
+| **[Linkinator](https://github.com/JustinBeckwith/linkinator)** | [![GitHub stars](https://img.shields.io/github/stars/JustinBeckwith/linkinator?style=social&color=white)](https://github.com/JustinBeckwith/linkinator/stargazers) | TypeScript / Node.js | Super-fast CLI and programmatic crawler that traverses websites to find broken links, dead URLs, and 404 response errors; ideal for CI/CD and SEO health checks. |
+| **[SiteOne Crawler](https://github.com/janreges/siteone-crawler)** | [![GitHub stars](https://img.shields.io/github/stars/janreges/siteone-crawler?style=social&color=white)](https://github.com/janreges/siteone-crawler/stargazers) | PHP / CLI / Multi-platform | Cross-platform website crawler and analyzer for SEO, security, accessibility, Core Web Vitals, and performance optimization across Windows, macOS, and Linux. |
+| **[Seonaut](https://github.com/StJudeWasHere/seonaut)** | [![GitHub stars](https://img.shields.io/github/stars/StJudeWasHere/seonaut?style=social&color=white)](https://github.com/StJudeWasHere/seonaut/stargazers) | Go / HTML Templates / SQLite | Self-hosted technical SEO audit tool that crawls sites to detect broken links, canonical issues, duplicate content, redirects, missing meta tags, and robots directives. |
+| **[Kuvasz](https://github.com/kuvasz-uptime/kuvasz)** | [![GitHub stars](https://img.shields.io/github/stars/kuvasz-uptime/kuvasz?style=social&color=white)](https://github.com/kuvasz-uptime/kuvasz/stargazers) | Kotlin / Micronaut / Docker | Lightweight uptime and SSL monitoring service with status pages, 5-second check intervals, Docker container monitoring, Prometheus/OpenTelemetry exporters, and MCP server. |
+| **[Scrawly](https://github.com/IliasSami/scrawly-seo-crawler)** | [![GitHub stars](https://img.shields.io/github/stars/IliasSami/scrawly-seo-crawler?style=social&color=white)](https://github.com/IliasSami/scrawly-seo-crawler/stargazers) | Python / Chromium / Desktop GUI | Desktop SEO crawler running 250+ checks across crawlability, Core Web Vitals, redirects, structured data, and AI search readiness (GEO / `llms.txt` checks). |
+| **[Pingtower](https://github.com/crleonard/pingtower)** | [![GitHub stars](https://img.shields.io/github/stars/crleonard/pingtower?style=social&color=white)](https://github.com/crleonard/pingtower/stargazers) | Go / JSON Storage | Minimalist self-hosted uptime monitor with built-in dashboard, custom header injection, status transition webhooks, and single-binary or Docker Compose deployment. |
+| **[xseo](https://github.com/yuripinto/xseo)** | [![GitHub stars](https://img.shields.io/github/stars/yuripinto/xseo?style=social&color=white)](https://github.com/yuripinto/xseo/stargazers) | Python / PySide6 / SQLite | Local-first desktop crawler with headless CLI and SARIF support for GitHub Actions code scanning; checks on-page SEO issues, broken links, and duplicate content. |
+| **[SEO Lens](https://github.com/Mark-Life/seo-lens)** | [![GitHub stars](https://img.shields.io/github/stars/Mark-Life/seo-lens?style=social&color=white)](https://github.com/Mark-Life/seo-lens/stargazers) | React / TypeScript / Extension | Crawler-accurate on-page SEO auditing tool and browser inspector designed for AI-friendly workflows, metadata inspection, and schema validation. |
+| **[Site Audit (sitemap-audit)](https://github.com/vipinc09/site-audit)** | [![GitHub stars](https://img.shields.io/github/stars/vipinc09/site-audit?style=social&color=white)](https://github.com/vipinc09/site-audit/stargazers) | Node.js / Playwright | Sitemap-driven website health auditor checking HTTP status codes, blocked network resources, and dynamic content rendering via browser automation. |
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Feature Comparison Matrix
 
-| Software | License | Type | Crawl/Audit | Uptime Monitor | Self-Hosted | Best For |
-|----------|---------|------|-------------|----------------|-------------|----------|
-| **Google Search Console** | Proprietary | Webmaster tool | Index/sitemap | ❌ | ❌ | Google organic performance |
-| **Bing Webmaster Tools** | Proprietary | Webmaster tool | Site Scan | ❌ | ❌ | Bing + AI citation data |
-| **Ahrefs Webmaster** | Proprietary | SEO audit | ✅ | ❌ | ❌ | Free backlink + audit |
-| **Semrush Site Audit** | Proprietary | SEO crawler | ✅ | ❌ | ❌ | Full Semrush suite |
-| **Screaming Frog** | Proprietary | Desktop crawler | ✅ | ❌ | ❌ (desktop) | Industry standard crawling |
-| **Sitebulb** | Proprietary | Visual audit | ✅ | ❌ | ❌ (desktop) | Client-ready reports |
-| **Lumar** | Proprietary | Enterprise crawler | ✅ | ❌ | ❌ (cloud) | Large-scale team audits |
-| **Scrawly** | MIT | Desktop crawler | ✅ 250 checks | ❌ | ✅ | Free Screaming Frog alternative + AI search |
-| **SEO Lens** | Open Source | Local crawler | ✅ 10K URLs | ❌ | ✅ | Free local audit + Excel |
-| **xseo** | Open Source | Local crawler | ✅ | ❌ | ✅ | CI-gated SEO with SARIF |
-| **Kuvasz** | Open Source | Uptime monitor | ❌ | ✅ | ✅ | Self-hosted uptime + SSL |
-| **Pingtower** | Open Source | Uptime monitor | ❌ | ✅ | ✅ | Lightweight Go monitor |
-| **sitemap-audit** | Open Source | Sitemap checker | ✅ (status) | ❌ | ✅ | CI sitemap validation |
+| Platform / Tool | License Model | Primary Architecture | Deep SEO Crawl | Core Web Vitals | Uptime & SSL | Automated CI/CD Support | Best Use Case |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| **Google Search Console** | Proprietary SaaS | Hosted Cloud | Index Only | ✅ | ❌ | ❌ (API only) | Official Google search performance & index health |
+| **Bing Webmaster Tools** | Proprietary SaaS | Hosted Cloud | ✅ (Site Scan) | ✅ | ❌ | ✅ (IndexNow) | Microsoft Bing & AI Copilot citation tracking |
+| **Pingdom** | Commercial SaaS | Hosted Cloud | ❌ | ❌ | ✅ | ✅ | Synthetic uptime & Real User Monitoring (RUM) |
+| **Semrush Site Audit** | Commercial SaaS | Hosted Cloud | ✅ | ✅ | ❌ | ✅ | All-in-one digital marketing & SEO suite |
+| **Ahrefs Webmaster** | Commercial SaaS | Hosted Cloud | ✅ | ✅ | ❌ | ❌ | Free backlink profile & crawl audits for owned sites |
+| **Moz Pro** | Commercial SaaS | Hosted Cloud | ✅ | ❌ | ❌ | ❌ | Agency rank tracking & domain authority auditing |
+| **Lumar** | Enterprise SaaS | Cloud Native | ✅ | ✅ | ❌ | ✅ | Enterprise websites, log analysis & GEO auditing |
+| **Screaming Frog** | Proprietary Desktop | Desktop (JVM) | ✅ | ✅ | ❌ | ❌ (CLI available) | In-depth technical SEO diagnostics & custom extraction |
+| **Sitebulb** | Proprietary Desktop | Desktop / Cloud | ✅ | ✅ | ❌ | ❌ | Client-ready visual audits with actionable guidance |
+| **Uptime Kuma** | Open Source (MIT) | Self-Hosted Server | ❌ | ❌ | ✅ | ✅ | Self-hosted uptime, latency & public status pages |
+| **Upptime** | Open Source (MIT) | Serverless (GitHub) | ❌ | ❌ | ✅ | ✅ | Zero-cost status pages hosted on GitHub Actions |
+| **Gatus** | Open Source (Apache-2.0) | Self-Hosted Server | ❌ | ❌ | ✅ | ✅ | Developer-first microservices & endpoint monitoring |
+| **OpenStatus** | Open Source (AGPL-3.0) | Self-Hosted / Cloud | ❌ | ❌ | ✅ | ✅ | Modern synthetic monitoring & incident response |
+| **Linkinator** | Open Source (MIT) | CLI / Node.js | ✅ (Links) | ❌ | ❌ | ✅ | Automated dead link checks in CI/CD pipelines |
+| **SiteOne Crawler** | Open Source (GPL-3.0) | CLI Cross-Platform | ✅ | ✅ | ❌ | ✅ | Cross-platform multi-audit (SEO, security, performance) |
+| **Seonaut** | Open Source (MIT) | Self-Hosted Server | ✅ | ❌ | ❌ | ❌ | Lightweight self-hosted alternative to Screaming Frog |
+| **Kuvasz** | Open Source (AGPL-3.0) | Docker / Kotlin | ❌ | ❌ | ✅ | ✅ | High-frequency uptime, SSL & Docker container monitoring |
+| **Scrawly** | Open Source (MIT) | Desktop (Python) | ✅ (250+ checks) | ✅ | ❌ | ❌ | Free desktop alternative to Screaming Frog with GEO checks |
+| **Pingtower** | Open Source (MIT) | Go / Single Binary | ❌ | ❌ | ✅ | ✅ | Zero-dependency lightweight HTTP uptime alerts |
+| **xseo** | Open Source (MIT) | Desktop / CLI | ✅ | ❌ | ❌ | ✅ (SARIF) | Code scanning integration with SARIF reports in CI |
+| **SEO Lens** | Open Source (MIT) | Browser Extension | On-Page | ❌ | ❌ | ❌ | Real-time on-page SEO debugging with AI code copy |
+| **Site Audit** | Open Source (MIT) | Node.js / Playwright | Sitemap Only | ❌ | ❌ | ✅ | Playwright-based sitemap health verification |
+
+---
+
+## 🧭 How to Choose the Right Tool
+
+1. **For Organic Search Visibility & Indexation:**
+   Always start with **Google Search Console** and **Bing Webmaster Tools**. They provide ground-truth data directly from the search engines about impressions, indexing errors, and AI citations.
+2. **For Comprehensive Technical SEO Audits:**
+   - **Desktop / Hands-on:** Use **Screaming Frog SEO Spider** or the open-source **Scrawly** for deep local crawling without cloud subscriptions.
+   - **Team Collaboration & Cloud Crawling:** Use **Ahrefs Webmaster Tools** (free for verified sites) or **Semrush / Lumar** for enterprise scale.
+3. **For Uptime, SSL & Incident Management:**
+   - Deploy **Uptime Kuma** or **Kuvasz** on Docker for complete infrastructure privacy and custom alerting.
+   - Use **Upptime** if you want zero infrastructure overhead powered by GitHub Actions.
+   - Choose **Pingdom** or **OpenStatus** for globally distributed synthetic transaction testing.
+4. **For Automated CI/CD & DevOps Quality Gates:**
+   - Integrate **Linkinator** or **xseo** into GitHub Actions to break builds on broken links or critical SEO regressions.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Webmaster Tool or Site Health Monitoring tool that should be listed here, please open a pull request with:
+Contributions are very welcome! If you maintain or use an open-source Webmaster Tool or Site Health Monitoring tool that belongs on this list:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
+1. Fork this repository.
+2. Add your entry to the appropriate table and ensure GitHub star links and badges are properly formatted.
+3. Keep entries sorted by **GitHub Stars (Descending)**.
+4. Submit a pull request with a brief explanation of why the tool stands out.
 
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
+Please ensure projects are actively maintained and adhere to open-source licensing.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository is distributed under the [CC0 1.0 Universal](LICENSE) (Public Domain) license. Listed individual tools and platforms are trademarks and copyrights of their respective owners.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<div align="center">
+
+⭐ **Found this resource helpful? Star this repository to help other developers & SEO professionals find it!** ⭐
+
+</div>
